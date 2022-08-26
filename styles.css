@@ -273,6 +273,29 @@ transition: all 0.3s ease;
 
 width: calc(50% - 30px);
 }
+.skills .skill-content .left .text{
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+
+}
+.skills .skill-content .right .bars{
+    margin-bottom: 15px;
+}
+.skills .skill-content .right .info{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.skills .skill-content .right  span{
+    font-weight: 600;
+    font-size: 15px;
+}
+.skills .skill-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgray;
+}
 
 
 
