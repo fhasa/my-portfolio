@@ -279,6 +279,26 @@ width: calc(50% - 30px);
   margin-bottom: 10px;
 
 }
+.skills .skill-content .left p{
+ text-align: justify;
+}
+.skills .skill-content .left a{
+    display: inline-block;
+    color: #0680e2;
+    background: white;
+    font-size: 20px;
+    padding: 8px 16px;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: 500;
+    border: 2px solid #0680e2;
+    transition: all 0.3s ease;
+}
+.skills .skill-content .left a:hover {
+    background-image: linear-gradient(#0680e2, #0680e2);
+    color: white;
+  }
 .skills .skill-content .right .bars{
     margin-bottom: 15px;
 }
@@ -286,6 +306,7 @@ width: calc(50% - 30px);
 display: flex;
 align-items: center;
 justify-content: space-between;
+margin-bottom: 5px;
 }
 .skills .skill-content .right  span{
     font-weight: 600;
@@ -295,11 +316,33 @@ justify-content: space-between;
     height: 5px;
     width: 100%;
     background: lightgray;
+    position: relative;
 }
+.skills .skill-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+ 
+    left: 0;
+    top: 0;
+    background: #fca61f;
 
-
-
-
+}
+.skills .skill-content .right .html::before{
+    width: 97%;
+}
+.skills .skill-content .right .css::before{
+    width: 80%;
+}
+.skills .skill-content .right .js::before{
+    width: 70%;
+}
+.skills .skill-content .right .flutter::before{
+    width: 90%;
+}
+.skills .skill-content .right .react::before{
+    width: 60%;
+}
 
 
 
@@ -329,7 +372,7 @@ justify-content: space-between;
     padding: 0 50px;
   }
 }
-@media (max-width: 880px) {
+@media (max-width: 947px) {
   .max-width {
     padding: 0 50px;
   }
@@ -399,6 +442,11 @@ justify-content: space-between;
     margin-bottom: 20px;
 
   }
+ 
+  .skills .skill-content .column{
+    width: 100%;
+    margin-bottom: 35px;
+  }
 
 }
 
@@ -416,7 +464,8 @@ justify-content: space-between;
     font-size: 20px;
     padding: 8px 20px;
   }
-  .services .services-content .card{
+  .services .services-content .card,
+  .skills .skill-content .column{
     width: 100%;
    
 
