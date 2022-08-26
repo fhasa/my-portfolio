@@ -120,10 +120,10 @@
 .sectionp{
     padding: 0 100px;
 }
-.about {
+.about, .services {
   font-family: "Poppins", sans-serif;
 }
-.about .title {
+section .title {
   position: relative;
   font-family: "Ubuntu", sans-serif;
   text-align: center;
@@ -132,7 +132,7 @@
   margin-bottom: 60px;
   padding-bottom: 20px;
 }
-.about .title::before{
+section .title::before{
     content: "";
     position: absolute;
     width: 180px;
@@ -142,8 +142,8 @@
     left: 50%;
     transform: translateX(-50%);
 } 
-.about .title::after{
-    content: "who I am";
+section .title::after{
+   
     position: absolute;
     /* background: black; */
     bottom: -12px;
@@ -153,6 +153,9 @@
     left: 50%;
     background: white;
     transform: translateX(-50%);
+}
+.about .title::after{
+    content: "who I am";
 }
 .about .about-content {
    display: flex; 
@@ -205,7 +208,10 @@
   }
 
 
-
+/* services section styling */
+.services{
+    margin-top: 120px;
+}
 
 
 
