@@ -5,7 +5,17 @@ $(document).ready(function(){
             $('.navbar').addClass("sticky");
         }else{
             $('.navbar').removeClass("sticky");
-        }})});
+        }
+    
+    
+    });
+    
+    $('.menu-btn').click(function(){
+        $('.navbar .menu').toggleClass("active");
+        $('.menu-btn span').toggleClass("active");
+    });
+    
+    });
         
         // scroll-up button show/hide script
      
