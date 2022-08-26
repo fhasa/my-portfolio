@@ -221,7 +221,7 @@
    
     padding-top: 40px;
     
-    padding-bottom: 30px;
+    padding-bottom: 60px;
 }
 .services .title::after{
     content: "What I provide";
@@ -344,9 +344,11 @@ margin-bottom: 5px;
     width: 60%;
 }
 
+/* contact section styles */
 
-
-
+.contact .title::after{
+    content: "get in touch";
+}
 
 
 
