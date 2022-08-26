@@ -116,9 +116,18 @@
   color: white;
 }
 /* shared styles  */
-.about, .services ,.skills{
+.about, .services ,.skills , .contact{
     font-family: "Poppins", sans-serif;
-  }
+  } 
+   .about .about-content,
+    .services .services-content ,
+    .skills .skill-content,
+    .contact .contact-content{
+   display: flex; 
+   align-items: center;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
   .sectionp{
     margin-top: 80px;
   }
@@ -152,12 +161,7 @@
       background: white;
       transform: translateX(-50%);
   }
-  .about .about-content, .services .services-content ,.skills .skill-content{
-   display: flex; 
-   align-items: center;
-   flex-wrap: wrap;
-   justify-content: space-between;
-}
+
 /*  about section styling */
 .sectionp{
     padding: 0 100px;
@@ -349,7 +353,39 @@ margin-bottom: 5px;
 .contact .title::after{
     content: "get in touch";
 }
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left p{
+ text-align: justify;
+}
+.contact .contact-content .left .icons{
+    margin:  10px 0;
 
+}
+.contact .contact-content .row{
+
+display: flex;
+height: 65px;
+align-items: center;
+
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row span{
+    font-size: 25px;
+    color: #fca61f;
+}
+.contact .contact-content .info .sub-title{
+    color: #333;
+
+}
 
 
 
