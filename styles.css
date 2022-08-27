@@ -22,6 +22,7 @@
 .sticky {
   padding: 10px 0;
   background-color: white;
+  box-shadow: 20px 10px 10px rgba(173, 216, 230, 0.596);
 }
 .navbar .max-width {
   display: flex;
@@ -74,11 +75,13 @@
 .home {
   display: flex;
   background: url("./images/f.png") no-repeat center;
-  height: 100vh;
+  /* height: 100vh; */
   background-size: cover;
+  background-attachment: fixed;
   color: black;
-  min-height: 500px;
+  min-height: 620px;
   font-family: "Ubuntu", sans-serif;
+
 }
 .home .max-width {
   margin: auto 0 auto 40px;
@@ -350,16 +353,18 @@ margin-bottom: 5px;
 
 /* contact section styles */
 .contact{
+    padding-top: 50px;
     padding-bottom: 30px;
     /* margin-bottom: 20px; */
-    background: #fca61f;
+    /* background: #0680e2; */
+    border-radius: 253px  253px 400px 400px ;
 } 
 .contact .title::after{
     content: "get in touch";
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
-    background: #333;
+
 }
 .contact .contact-content .text{
     font-size: 20px;
@@ -367,12 +372,12 @@ margin-bottom: 5px;
     margin-bottom: 10px;
 }
 .contact .contact-content .left{
-  background: rgba(255, 255, 255, 0.623);
   padding: 20px 20px 20px 20px;
+  border-radius: 6px;
 }
 .contact .contact-content .right{
-    background: rgba(255, 255, 255, 0.623);
     padding: 20px 20px 20px 20px;
+    border-radius: 6px;
   }
 .contact .contact-content .left p{
  text-align: justify;
@@ -395,10 +400,7 @@ align-items: center;
     font-size: 25px;
     color: #fca61f;
 }
-.contact .contact-content .info .sub-title{
-    color: #333;
 
-}
 .contact .right form .fields{
     display: flex;
 }
@@ -409,7 +411,7 @@ align-items: center;
     justify-content: space-between;
 }
 .contact .right form .textarea{
-    height: 90px;
+    height: 100px;
     width: 100%;
 }
 .contact .right form .field,
@@ -424,28 +426,31 @@ align-items: center;
 }
 .contact .right form .email{
     margin-left: 10px;
+    font-size: 12px;
 }
 .contact .right form .field input,
  .contact .right form .textarea textarea
 {
     height: 100%;
     width: 100%;
-    border: 1px solid lightgray;
+    border: none;
     border-radius: 6px;
     outline: none;
     padding: 0 15px;
-    font-size: 17px;
+    font-size: 15px;
     font-family: "Poppins", sans-serif;
+    border: 1px solid lightslategray;
 }
 .contact .right form .textarea textarea{
     padding-top: 10px;
     resize: none;
     margin-bottom: 20px;
+    height: 90px;
 }
 .contact .right form .button {  
     height: 47px;
     width: 170px;
-    margin-top: 50px;
+    margin-top: 60px;
 }
 .contact .right form .button button{
     width: 100%;
@@ -466,6 +471,37 @@ align-items: center;
     color: #fca61f;
     background: none;
 }
+.contact .max-width .title1 {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+  }
+.contact .max-width .title1::before{
+      content: "";
+      position: absolute;
+      width: 180px;
+      height: 3px;
+      background: black;
+      bottom: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+  } 
+ .contact .max-width .title1::after{     
+      position: absolute;
+      /* background: black; */
+      bottom: -12px;
+      padding: 5px;
+      font-size: 20px;
+      color: black;
+      left: 50%;
+      background: #fca61f;
+      transform: translateX(-50%);
+  }
+
 /* responsive media quires styling*/
 @media (max-width: 1300px) {
   .home .max-width {
